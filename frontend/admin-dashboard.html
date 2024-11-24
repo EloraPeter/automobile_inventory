@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2>Admin Dashboard</h2>
+        <button id="logout-btn">Logout</button>
+    </nav>
+
+    <main>
+        <section>
+            <h3>Users Management</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="users-table">
+                    <!-- Populated dynamically using JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Inventory Management</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Car ID</th>
+                        <th>Make</th>
+                        <th>Model</th>
+                        <th>Year</th>
+                        <th>Price</th>
+                        <th>Availability</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="inventory-table">
+                    <!-- Populated dynamically using JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="admin.js"></script>
+</body>
+</html>

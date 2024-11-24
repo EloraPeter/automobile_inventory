@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="images/logo.jpeg" alt="">
+            <h1>MotorMate</h1>
+        </div>
+        <nav>
+            <p><a href="add-car.html" class="navbtn addcar">Add Car</a></p>
+            <button id="logout-btn" class="navbtn">Logout</button>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="dashboard-hero">
+            <div class="car-container">
+                <div class="car"></div>
+            </div>
+            <div class="welcome-message">Welcome, User</div>
+        </div>
+
+        <section>
+
+            <input type="text" id="search-bar" placeholder="Search by make or model..." oninput="filterInventory()" />
+            <table>
+                <thead>
+                    <tr>
+                        <th>Make</th>
+                        <th>Model</th>
+                        <th>Year</th>
+                        <th>Price</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody id="inventory-table">
+                    <!-- Populated dynamically -->
+                </tbody>
+            </table>
+        </section>
+
+
+
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

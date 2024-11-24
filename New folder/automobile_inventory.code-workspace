@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../OneDrive/Documents/automobile inventory system/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "automobile_inventory"
+	}
+}

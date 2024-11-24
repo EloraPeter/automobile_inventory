@@ -1,0 +1,564 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px auto;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin: 0 30px;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #adadad;
+}
+
+header .logo-container h1{
+    margin-left: 10px;
+    font-size: 60px;
+    color: #007bff;
+}
+
+nav {
+    display: flex;
+    margin-left: 20px;
+}
+
+nav p {
+    margin-right: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease
+}
+
+nav p:hover{
+    transform: scale(1.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #004a99;
+}
+
+/* Hero Section */
+#home-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Homepage car.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+.herotitle h2 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin: 20px auto;
+}
+
+.herotitle p {
+    font-size: 1.6rem;
+    width: 60%;
+    margin: 30px auto;
+    line-height: 2;
+}
+
+.grey-button {
+    background-color: #808080;
+    color: white;
+    padding: 20px 30px;
+    border: 1px solid #007bff;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.grey-button:hover {
+    background-color: #6c6c6c;
+}
+
+/* About Us Section */
+#about-us {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 50px;
+    background-color: #f9f9f9;
+}
+
+#about-us img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.about-us-title {
+    width: 50%;
+    text-align: right;
+    margin: 0 auto;
+}
+
+.about-us-title h2 {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+}
+
+.about-us-title p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* About The Owners Section */
+#about-the-owners {
+    padding: 80px 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+#about-the-owners img {
+    max-width: 45%;
+    margin: 10px 10px;
+    border-radius: 8px;
+}
+
+.about-the-owners-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-the-owners-title p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Team Members Section */
+.owners-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.members {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.members .socials a {
+    color: #333;
+    font-size: 24px;
+    margin: 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.members .socials a:hover {
+    color: #007bff;
+}
+
+.members .info h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.members .info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Why Choose Us Section */
+#why-choose-us {
+    padding: 80px 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.why-choose-us-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.why-choose-us-title p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* faq */
+.faq-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    /* background: #fff; */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.faq {
+    margin: 10px 0;
+}
+
+.faq h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border-radius: 4px;
+}
+
+.faq p {
+    display: none;
+    margin: 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 3px solid #333;
+    border-radius: 4px;
+}
+
+.faq.active p {
+    display: block;
+}
+
+/* LOGIN PAGE */
+#mainbox {
+    background: linear-gradient(rgba(43, 1, 1, 0.2), rgba(110, 5, 5, 0.4)), url(images/maybach.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 10px;
+}
+
+.form-container {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* dashboard */
+.navbtn {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.navbtn:hover {
+    background-color: #6c6c6c;
+}
+
+.navbtn.addcar:hover{
+    color: #fff;
+}
+
+/* Car container */
+.car-container {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+
+/* The car itself */
+.car {
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 50px;
+    /* background-color: #333; */
+    border-radius: 10px;
+    background-image: url(images/car-animation.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: drive 5s linear infinite;
+}
+
+/* Animation for driving the car */
+@keyframes drive {
+    0% {
+        left: -120px; /* Starts just off the left side */
+    }
+    50% {
+        left: 50%; /* Moves to the center */
+        transform: translateX(-50%); /* Keep it centered */
+    }
+    100% {
+        left: 100%; /* Moves off the right side */
+    }
+}
+
+/* Welcome message styling */
+.welcome-message {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+    opacity: 0;
+    animation: showMessage 5s linear infinite;
+    z-index: -1;
+}
+
+/* Animation for showing and hiding the welcome message */
+@keyframes showMessage {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+th,
+td {
+    border: none;
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+}
+
+th {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #d1daf5;
+}
+
+tbody tr:hover {
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+}
+
+/* Availability column styling */
+td:nth-child(5) {
+    font-weight: 600; /* Make the availability text bold */
+    color: #28a745; /* Green text for available items */
+}
+
+/* add car page */
+
+#add-car-form {
+    width: 80%; /* Adjust width to fit the page */
+    max-width: 600px; /* Set a max-width for better control on large screens */
+    margin: 30px auto; /* Center the form */
+    padding: 20px; /* Add some padding around the form */
+    /* background-color: #fff; White background for the form */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); Soft shadow for depth */
+}
+
+/* Title styling */
+h3#addcar {
+    text-align: center; /* Center the title */
+    color: #007bff; /* Blue title to match your branding */
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 30px;
+}
+
+/* Label styling */
+#add-car-form label {
+    display: block; /* Ensure each label takes a new line */
+    margin-bottom: 8px; /* Add space below each label */
+    color: #333; /* Dark text color for readability */
+    font-weight: 600; /* Bold labels */
+}
+
+/* Input and select field styling */
+#add-car-form input[type="text"], input[type="number"], select {
+    width: 100%; /* Make input fields take up full width */
+    padding: 10px; /* Add padding inside the input fields */
+    margin-bottom: 20px; /* Add space between fields */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Set font size for better readability */
+    color: #333; /* Dark text color */
+}
+
+/* Input focus state */
+#add-car-form input:focus, select:focus {
+    border-color: #007bff; /* Highlight input border with blue when focused */
+    outline: none; /* Remove default outline */
+}
+
+/* Submit button styling */
+#add-car-form button[type="submit"] {
+    width: 100%; /* Make the button take up full width */
+    padding: 12px; /* Add padding inside the button */
+    background-color: #007bff; /* Blue background for the button */
+    color: white; /* White text */
+    font-size: 18px; /* Set font size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    font-weight: 600; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Button hover state */
+#add-car-form button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue when hovered */
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    #add-car-form {
+        width: 90%; /* Make the form take up more space on small screens */
+    }
+
+    #add-car-form button[type="submit"] {
+        font-size: 16px; /* Smaller button text on smaller screens */
+    }
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.footer-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}

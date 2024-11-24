@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Car</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="images/logo.jpeg" alt="">
+            <h1>MotorMate</h1>
+        </div>
+        <nav>
+            <button id="dashboard-btn" class="navbtn">Back to Dashboard</button>
+            <button id="logout-btn" class="navbtn">Logout</button>
+        </nav>
+    </header>
+
+
+    <main>
+        <h3 id="addcar">Add a New Car</h3>
+        <form id="add-car-form">
+            <label for="make">Make:</label>
+            <input type="text" id="make" placeholder="e.g., Toyota" required>
+
+            <label for="model">Model:</label>
+            <input type="text" id="model" placeholder="e.g., Corolla" required>
+
+            <label for="year">Year:</label>
+            <input type="number" id="year" placeholder="e.g., 2022" required>
+
+            <label for="price">Price (NGN):</label>
+            <input type="number" id="price" placeholder="e.g., 20000" required>
+
+            <label for="availability">Availability:</label>
+            <select id="availability" required>
+                <option value="true">Available</option>
+                <option value="false">Unavailable</option>
+            </select>
+
+            <button type="submit">Add Car</button>
+        </form>
+    </main>
+    <script>
+        // This script will run after the page has loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            // Loop through all the <td> elements in the 5th column
+            document.querySelectorAll('td:nth-child(5)').forEach(function (cell) {
+                // If the text content is "Unavailable"
+                if (cell.textContent.trim() === 'Unavailable') {
+                    // Apply red color to the text
+                    cell.style.color = '#dc3545';  // Red color for "Unavailable"
+                }
+            });
+        });
+
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
